@@ -2,6 +2,11 @@ This repository contains study files and assignments from the discipline Algorit
 
 # Algoritmos e Estrutura de Dados II (DCA0209)
 
+## Projetos Desenvolditos
+
+- Auto completar
+- [Consulta em arquivos CSV](FastQuery_CSV)
+
 ## Responsável pelo repositório
 Pedro Rêgo Vilar Neto
 * Matrícula: 20230093705
