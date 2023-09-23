@@ -2,7 +2,7 @@ This repository contains study files and assignments from the discipline Algorit
 
 # Algoritmos e Estrutura de Dados II (DCA0209)
 
-## Projetos Desenvolditos
+## Projetos Desenvolvidos
 
 - Auto completar
 - [Consulta em arquivos CSV](FastQuery_CSV)
