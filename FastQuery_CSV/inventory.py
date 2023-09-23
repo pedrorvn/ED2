@@ -117,15 +117,45 @@ class Inventory():
         laptops_in_range = []
         for i in range(min,max):
             laptops_in_range.append(self.rows_by_price[i])
-
+        if len(laptops_in_range) == 0:
+            return -1
         return laptops_in_range
     
     def find_cheapest_laptop_with_ram_memory(self, target_ram, target_memory):
-        for i in range(len(self.rows_by_price)):
-            row = self.rows_by_price[i]
-            if row[7] == target_ram and row[8] == target_memory:
+        for row in self.rows_by_price:
+            if int(row[7]) == target_ram and int(row[8]) == target_memory:
                 return row
-        return -1
+    
+        return -1  # Retorna -1 se nenhum laptop for encontrado
+    
+    def find_cheapest_specs(self, ram_text,mem_text):
+        match = re.search(r'(\d+)\s*(TB|GB)', ram_text, re.IGNORECASE)
+        if match:
+            value = int(match.group(1))
+            unit = match.group(2).lower()
+        
+            # Converte a unidade para GB, se necessário
+            if unit == "tb":
+                value *= 1000
+
+            ram = value
+        else:
+            return -1
+        match = re.search(r'(\d+)\s*(TB|GB)', mem_text, re.IGNORECASE)
+        if match:
+            value = int(match.group(1))
+            unit = match.group(2).lower()
+        
+            # Converte a unidade para GB, se necessário
+            if unit == "tb":
+                value *= 1000
+
+            memory = value
+        else:
+            return -1
+        
+        return Inventory.find_cheapest_laptop_with_ram_memory(self,ram,memory)
+
         
         
     
