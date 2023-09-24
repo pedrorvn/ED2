@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Esta implementação partiu de um projeto guiado da plataforma [DataQuest](https://app.dataquest.io/c/86/m/481/guided-project%3A-building-fast-queries-on-a-csv/1/the-dat). Esta implementação consiste em desenvolver um programa que realiza consultas em arquivos CSV contendo informações sobre notebooks. O arquivo CSV é tratado como um banco de dados e contém os seguintes campos para cada notebook:
+Esta implementação partiu de um projeto guiado da plataforma [DataQuest](https://app.dataquest.io/c/86/m/481/guided-project%3A-building-fast-queries-on-a-csv/1/the-dat). O projeto em questão consiste em desenvolver um programa que realiza consultas em arquivos CSV contendo informações sobre notebooks. O arquivo CSV é tratado como um banco de dados e contém os seguintes campos para cada notebook:
 
 - **ID:** Um identificador exclusivo para o laptop.
 - **Company:** O nome da empresa que produz o laptop.
