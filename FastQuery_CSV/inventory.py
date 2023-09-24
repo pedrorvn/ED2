@@ -137,18 +137,6 @@ class Inventory:
             return -1
         return laptops_in_range
 
-    def find_laptops_in_range(self, min_price, max_price):
-        if (min_price > max_price):
-            return -1
-        min = self.find_first_laptop_more_expensive(min_price)
-        max = self.find_last_laptop_cheaper(max_price)
-        laptops_in_range = []
-        for i in range(min, max):
-            laptops_in_range.append(self.rows_by_price[i])
-        if len(laptops_in_range) == 0:
-            return -1
-        return laptops_in_range
-
     # Método para encontrar o laptop mais barato com determinada RAM e memória
     def find_cheapest_laptop_with_ram_memory(self, target_ram, target_memory):
         for row in self.rows_by_price:
