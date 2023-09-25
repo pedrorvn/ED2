@@ -1,5 +1,9 @@
 # Projeto: Consulta de Laptops em Arquivos CSV
 
+## Vídeo Explicativo 
+
+- [Clique aqui para abrir o vídeo](https://drive.google.com/file/d/1NQam9vzTSfx-B3tsG01xNsNuEB1SXVdb/view?usp=sharing)
+
 ## Descrição do Projeto
 
 Esta implementação partiu de um projeto guiado da
