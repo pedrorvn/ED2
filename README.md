@@ -6,6 +6,7 @@ This repository contains study files and assignments from the discipline Algorit
 
 - [Autocompletar Palavras](https://github.com/jordanmaramos/ED2/tree/main/U1T2)
 - [Consulta em arquivos CSV](FastQuery_CSV)
+- [F1 CLASH](https://github.com/pedrorvn/ED2/tree/main/F1%20Clash)
 
 ## Responsável pelo repositório
 Pedro Rêgo Vilar Neto
