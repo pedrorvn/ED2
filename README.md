@@ -4,7 +4,7 @@ This repository contains study files and assignments from the discipline Algorit
 
 ## Projetos Desenvolvidos
 
-- Auto completar
+- [Autocompletar Palavras](https://github.com/jordanmaramos/ED2/tree/main/U1T2)
 - [Consulta em arquivos CSV](FastQuery_CSV)
 
 ## Responsável pelo repositório
