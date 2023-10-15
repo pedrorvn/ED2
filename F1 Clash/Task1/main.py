@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from Setup.cars_setup import CarSetup
 import networkx as nx
 import seaborn as sns
-from Task1.Setup import bottles
+from Setup.bottles import bottles
 from nxviz import CircosPlot
 
 """ ###################### TAREFA 1 ######################"""
@@ -113,7 +113,7 @@ plt.show()
 G2 = nx.Graph()
 
 # Adicionando os nós e arestas ao grafo bipartido
-for bottle, attributes in bottles.bottles.items():
+for bottle, attributes in bottles.items():
     G2.add_node(bottle, bipartite=0)
     for attr, value in attributes.items():
         if not G2.has_node(attr):
