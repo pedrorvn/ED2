@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from Setup.cars_setup import CarSetup
 import networkx as nx
 import seaborn as sns
+from Task1.Setup import bottles
 from nxviz import CircosPlot
 
 """ ###################### TAREFA 1 ######################"""
@@ -108,232 +109,11 @@ plt.show()
 
 """ ###################### TAREFA 3 ######################"""
 
-bottles = {
-    'Tsar': {
-        'defending': 10,
-        'tyre_management': 15,
-        'cornering': 15
-    },
-    'Frost': {
-        'tyre_management': 25,
-        'race_start': 15,
-        'reliability': 10
-    },
-    'Tulip': {
-        'defending': 10,
-        'reliability': 20,
-        'pit_stop': 20
-    },
-    'Dragon': {
-        'overtaking': 20,
-        'tyre_management': 15,
-        'power_unit': 15
-    },
-    'Kawaii': {
-        'race_start': 15,
-        'cornering': 20,
-        'pit_stop': 15
-    },
-    'Pretzel': {
-        'tyre_management': 25,
-        'power_unit': 15,
-        'pit_stop': 10
-    },
-    'Vice': {
-        'speed': 10,
-        'power_unit': 15,
-        'reliability': 25
-    },
-    'Schooner': {
-        'defending': 10,
-        'reliability': 25,
-        'pit_stop': 15
-    },
-    'Dijin': {
-        'defending': 15,
-        'cornering': 15,
-        'reliability': 20
-    },
-    'Oud': {
-        'overtaking': 15,
-        'cornering': 10,
-        'pit_stop': 25
-    },
-    'Eternal Flame': {
-        'overtaking': 25,
-        'tyre_management': 10,
-        'reliability': 15
-    },
-    'Eagle': {
-        'tyre_management': 20,
-        'reliability': 15,
-        'pit_stop': 15
-    },
-    'Iron Force': {
-        'tyre_management': 10,
-        'power_unit': 20,
-        'reliability': 20
-    },
-    'Lumberjack': {
-        'defending': 15,
-        'tyre_management': 10,
-        'reliability': 25
-    },
-    'Cranberry': {
-        'overtaking': 20,
-        'defending': 20,
-        'reliability': 10
-    },
-    'Butterfly': {
-        'tyre_management': 20,
-        'power_unit': 25,
-        'pit_stop': 5
-    },
-    'Tune-in': {
-        'speed': 10,
-        'cornering': 15,
-        'pit_stop': 25
-    },
-    'Self-Control': {
-        'tyre_management': 5,
-        'speed': 5,
-        'reliability': 5
-    },
-    'Warrior': {
-        'overtaking': 5,
-        'defending': 5,
-        'speed': 10
-    },
-    'Ballast': {
-        'race_start': 5,
-        'cornering': 10,
-        'pit_stop': 10
-    },
-    'Instinct': {
-        'race_start': 10,
-        'power_unit': 15,
-        'reliability': 5},
-    'Downforce': {
-        'defending': 15,
-        'tyre_management': 15,
-        'cornering': 5
-    },
-    'Hex': {
-        'overtaking': 20,
-        'speed': 15,
-        'pit_stop': 5
-    },
-    'Eggception': {
-        'defending': 15,
-        'power_unit': 10,
-        'pit_stop': 25
-    },
-    'Rooster': {
-        'overtaking': 20,
-        'race_start': 20,
-        'power_unit': 10
-    },
-    'Cuppa': {
-        'overtaking': 10,
-        'race_start': 20,
-        'cornering': 20
-    },
-    'Street Shark': {
-        'overtaking': 10,
-        'race_start': 25,
-        'speed': 15
-    },
-    'Herald': {
-        'overtaking': 10,
-        'race_start': 25,
-        'cornering': 15
-    },
-    'Prince': {
-        'defending': 10,
-        'pit_stop': 20,
-        'cornering': 20
-    },
-    'Unstoppable': {
-        'overtaking': 25,
-        'speed': 15,
-        'power_unit': 10
-    },
-    'Dead Fast': {
-        'tyre_management': 5,
-        'speed': 25,
-        'power_unit': 20
-    },
-    'Gladiator': {
-        'defending': 25,
-        'race_start': 15,
-        'power_unit': 10
-    },
-    'Tauros': {
-        'overtaking': 5,
-        'speed': 20,
-        'power_unit': 25
-    },
-    'Merlion': {
-        'speed': 15,
-        'cornering': 25,
-        'pit_stop': 10
-    },
-    'Samba': {
-        'speed': 5,
-        'power_unit': 25,
-        'pit_stop': 20
-    },
-    'Caveira': {
-        'overtaking': 15,
-        'speed': 25,
-        'power_unit': 10
-    },
-    'Fogos': {
-        'overtaking': 15,
-        'race_start': 15,
-        'speed': 20
-    },
-    'Movember': {
-        'defending': 15,
-        'tyre_management': 10,
-        'cornering': 25
-    },
-    'Palmeira': {
-        'defending': 20,
-        'tyre_management': 20,
-        'race_start': 10},
-    'Nazar': {
-        'tyre_management': 15,
-        'race_start': 20,
-        'reliability': 15
-    },
-    'Aderencia': {
-        'race_start': 10,
-        'cornering': 25,
-        'reliability': 15
-    },
-    'Arco-iris': {
-        'defending': 25,
-        'race_start': 5,
-        'speed': 20
-    },
-    'Eclipse': {
-        'overtaking': 15,
-        'speed': 25,
-        'pit_stop': 10
-    },
-    'Rena': {
-        'defending': 20,
-        'cornering': 10,
-        'pit_stop': 20
-    }
-}
-
 # 1. Cria o grafo bipartido
 G2 = nx.Graph()
 
 # Adicionando os nós e arestas ao grafo bipartido
-for bottle, attributes in bottles.items():
+for bottle, attributes in bottles.bottles.items():
     G2.add_node(bottle, bipartite=0)
     for attr, value in attributes.items():
         if not G2.has_node(attr):
@@ -349,36 +129,30 @@ pos = dict()
 pos.update((node, (1, index)) for index, node in enumerate(bottle_nodes))
 pos.update((node, (2, index)) for index, node in enumerate(attribute_nodes))
 
+# Consolidar as arestas repetidas e calcular o número de arestas entre cada par de nós
+edge_weights = {}
+for (u, v, data) in G2.edges(data=True):
+    if (u, v) not in edge_weights:
+        edge_weights[(u, v)] = data['weight']
+    else:
+        edge_weights[(u, v)] += data['weight']
+
+# Criar um novo grafo com as arestas consolidadas
+G3 = nx.Graph()
+G3.add_nodes_from(G2.nodes(data=True))
+for (u, v), weight in edge_weights.items():
+    G3.add_edge(u, v, weight=weight)
+
+# Definindo posições para os nós (como antes)
+pos = dict()
+pos.update((node, (1, index)) for index, node in enumerate(bottle_nodes))
+pos.update((node, (2, index)) for index, node in enumerate(attribute_nodes))
+
 # Desenhando o grafo
 plt.figure(figsize=(15,15))
-nx.draw(G2, pos=pos, with_labels=True, node_size=700, node_color='skyblue', font_size=10)
+nx.draw(G3, pos, with_labels=True, node_size=700, node_color='skyblue', font_size=10)
+labels = nx.get_edge_attributes(G3, 'weight')
+nx.draw_networkx_edge_labels(G3, pos, edge_labels=labels)
 plt.title("Grafo Bipartido das Garrafinhas e Propriedades")
 plt.show()
-#
-# # Consolidar as arestas repetidas e calcular o número de arestas entre cada par de nós
-# edge_weights = {}
-# for (u, v, data) in G2.edges(data=True):
-#     if (u, v) not in edge_weights:
-#         edge_weights[(u, v)] = data['weight']
-#     else:
-#         edge_weights[(u, v)] += data['weight']
-#
-# # Criar um novo grafo com as arestas consolidadas
-# G3 = nx.Graph()
-# G3.add_nodes_from(G2.nodes(data=True))
-# for (u, v), weight in edge_weights.items():
-#     G3.add_edge(u, v, weight=weight)
-#
-# # Definindo posições para os nós (como antes)
-# pos = dict()
-# pos.update((node, (1, index)) for index, node in enumerate(bottle_nodes))
-# pos.update((node, (2, index)) for index, node in enumerate(attribute_nodes))
-#
-# # Desenhando o grafo
-# plt.figure(figsize=(15,15))
-# nx.draw(G3, pos, with_labels=True, node_size=700, node_color='skyblue', font_size=10)
-# labels = nx.get_edge_attributes(G3, 'weight')
-# nx.draw_networkx_edge_labels(G3, pos, edge_labels=labels)
-# plt.title("Grafo Bipartido das Garrafinhas e Propriedades")
-# plt.show()
 
