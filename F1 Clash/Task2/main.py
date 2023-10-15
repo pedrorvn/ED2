@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
+import networkx as nx
 from Setup.cars_setup import CarSetup
+
+
 
 # Lista para armazenar todos os setups possíveis
 all_setups = []
@@ -8,7 +11,7 @@ all_setups = []
 team_scores = []
 
 # Definindo o cutoff
-cutoff = 700
+cutoff = 880
 
 # Gerar todas as combinações possíveis
 for brakes in CarSetup.brakes_options:
@@ -37,25 +40,41 @@ for brakes in CarSetup.brakes_options:
 
 
 # Plotar o histograma
-
+'''
 plt.hist(team_scores, bins=50, color='blue', edgecolor='black')
 plt.xlabel("Team Score")
 plt.ylabel("Número de Configurações")
 plt.title(f"Histograma do Team Score (Limite = {cutoff})")
 plt.show()
+'''
+# Criar um objeto de grafo
+G = nx.Graph()
 
-"""
-kfdg
-gdfg
-dfgfg
-dgfd
-v
-dv
-gfb
-fb
-fb
-b
-bd
-f
-d
-"""
+# Adicionar nós ao grafo com base nos dados do histograma
+for i, valor in enumerate(team_scores):
+    G.add_node(i, weight=valor)
+
+# Adicionar arestas (conexões entre os nós)
+for i in range(len(team_scores) - 1):
+    G.add_edge(i, i + 1)
+
+# Layout do gráfico
+pos = nx.spring_layout(G)
+
+# Obter pesos dos nós
+node_weights = [G.nodes[n]['weight'] for n in G.nodes]
+
+# Desenhar nós
+nx.draw_networkx_nodes(G, pos, node_size=node_weights, node_color='b')
+
+# Desenhar arestas
+nx.draw_networkx_edges(G, pos, edgelist=G.edges, edge_color='gray')
+
+# Adicionar rótulos aos nós
+labels = {i: f'Node {i}\nWeight {node_weights[i]}' for i in G.nodes}
+nx.draw_networkx_labels(G, pos, labels)
+
+# Mostrar o gráfico
+plt.axis('off')
+plt.show()
+
