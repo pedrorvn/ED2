@@ -1,9 +1,9 @@
 class CarSetup:
-    def __init__(self, brakes, engine, suspension, front_rear, rear_wing, gearbox):
+    def __init__(self, brakes, engine, suspension, front_wing, rear_wing, gearbox):
         self.brakes = brakes
         self.engine = engine
         self.suspension = suspension
-        self.front_wing = front_rear
+        self.front_wing = front_wing
         self.rear_wing = rear_wing
         self.gearbox = gearbox
 
@@ -112,7 +112,6 @@ class CarSetup:
         contributions["Power Unit"] += gearbox_contributions[self.gearbox][2]
         contributions["Reliability"] += gearbox_contributions[self.gearbox][3]
         contributions["Average Pit Stop Time"] += gearbox_contributions[self.gearbox][4]
-
 
         return contributions
 
