@@ -4,6 +4,7 @@ import networkx as nx
 import seaborn as sns
 from Setup.bottles import bottles
 from nxviz import CircosPlot
+from Setup.drivers import drivers
 
 """ ###################### TAREFA 1 ######################"""
 
@@ -38,8 +39,8 @@ for brakes in CarSetup.brakes_options:
                         id_count += 1
 
                         # Calcular o Team Score
-                        team_score = contributions["Speed"] + contributions["Cornering"] + contributions["Power Unit"] + \
-                                     contributions["Reliability"] + (contributions["Average Pit Stop Time"] / 0.02)
+                        team_score = contributions["speed"] + contributions["cornering"] + contributions["power_unit"] + \
+                                     contributions["reliability"] + (contributions["avg_pit_stop_time"] / 0.02)
 
                         # Armazenar o Team Score
                         if team_score >= cutoff:
@@ -63,11 +64,11 @@ config_count = {}
 # Adicione os nós ao gráfico baseado no Team Score que é maior que o cutoff e crie arestas
 for setup_data in all_setups:
     contributions = setup_data["contributions"]
-    score = (contributions["Speed"] +
-             contributions["Cornering"] +
-             contributions["Power Unit"] +
-             contributions["Reliability"] +
-             (contributions["Average Pit Stop Time"] / 0.02))
+    score = (contributions["speed"] +
+             contributions["cornering"] +
+             contributions["power_unit"] +
+             contributions["reliability"] +
+             (contributions["avg_pit_stop_time"] / 0.02))
     if score >= cutoff:
         setup_id = setup_data["id"]
         G1.add_node(setup_id, setup=setup_data["setup"], score=score)
@@ -155,4 +156,14 @@ labels = nx.get_edge_attributes(G3, 'weight')
 nx.draw_networkx_edge_labels(G3, pos, edge_labels=labels)
 plt.title("Grafo Bipartido das Garrafinhas e Propriedades")
 plt.show()
+
+
+
+
+
+
+
+
+
+""" ###################### TAREFA 4 ######################"""
 

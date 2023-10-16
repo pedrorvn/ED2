@@ -9,11 +9,11 @@ class CarSetup:
 
     def calculate_contributions(self):
         contributions = {
-            "Speed": 0,
-            "Cornering": 0,
-            "Power Unit": 0,
-            "Reliability": 0,
-            "Average Pit Stop Time": 0
+            "speed": 0,
+            "cornering": 0,
+            "power_unit": 0,
+            "reliability": 0,
+            "avg_pit_stop_time": 0
         }
 
         # Define as contribuições para cada opção de cada parâmetro
@@ -27,11 +27,11 @@ class CarSetup:
             "Brute Force": (21, 19, 36, 18, 0.63),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += engine_contributions[self.engine][0]
-        contributions["Cornering"] += engine_contributions[self.engine][1]
-        contributions["Power Unit"] += engine_contributions[self.engine][2]
-        contributions["Reliability"] += engine_contributions[self.engine][3]
-        contributions["Average Pit Stop Time"] += engine_contributions[self.engine][4]
+        contributions["speed"] += engine_contributions[self.engine][0]
+        contributions["cornering"] += engine_contributions[self.engine][1]
+        contributions["power_unit"] += engine_contributions[self.engine][2]
+        contributions["reliability"] += engine_contributions[self.engine][3]
+        contributions["avg_pit_stop_time"] += engine_contributions[self.engine][4]
 
         brakes_contributions = {
             "Wildcore": (36, 23, 33, 22, 0.59),
@@ -43,11 +43,11 @@ class CarSetup:
             "Essence": (14, 13, 12, 25, 0.76),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += brakes_contributions[self.brakes][0]
-        contributions["Cornering"] += brakes_contributions[self.brakes][1]
-        contributions["Power Unit"] += brakes_contributions[self.brakes][2]
-        contributions["Reliability"] += brakes_contributions[self.brakes][3]
-        contributions["Average Pit Stop Time"] += brakes_contributions[self.brakes][4]
+        contributions["speed"] += brakes_contributions[self.brakes][0]
+        contributions["cornering"] += brakes_contributions[self.brakes][1]
+        contributions["power_unit"] += brakes_contributions[self.brakes][2]
+        contributions["reliability"] += brakes_contributions[self.brakes][3]
+        contributions["avg_pit_stop_time"] += brakes_contributions[self.brakes][4]
 
         suspension_contributions = {
             "Sigma": (32, 28, 30, 29, 0.39),
@@ -59,11 +59,11 @@ class CarSetup:
             "The Equator": (20, 19, 18, 21, 0.61),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += suspension_contributions[self.suspension][0]
-        contributions["Cornering"] += suspension_contributions[self.suspension][1]
-        contributions["Power Unit"] += suspension_contributions[self.suspension][2]
-        contributions["Reliability"] += suspension_contributions[self.suspension][3]
-        contributions["Average Pit Stop Time"] += suspension_contributions[self.suspension][4]
+        contributions["speed"] += suspension_contributions[self.suspension][0]
+        contributions["cornering"] += suspension_contributions[self.suspension][1]
+        contributions["power_unit"] += suspension_contributions[self.suspension][2]
+        contributions["reliability"] += suspension_contributions[self.suspension][3]
+        contributions["avg_pit_stop_time"] += suspension_contributions[self.suspension][4]
         
         front_wing_contributions = {
             "Virtue": (23, 50, 27, 24, 0.49),
@@ -75,11 +75,11 @@ class CarSetup:
             "The Scout": (13, 27, 15, 14, 0.73),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += front_wing_contributions[self.front_wing][0]
-        contributions["Cornering"] += front_wing_contributions[self.front_wing][1]
-        contributions["Power Unit"] += front_wing_contributions[self.front_wing][2]
-        contributions["Reliability"] += front_wing_contributions[self.front_wing][3]
-        contributions["Average Pit Stop Time"] += front_wing_contributions[self.front_wing][4]
+        contributions["speed"] += front_wing_contributions[self.front_wing][0]
+        contributions["cornering"] += front_wing_contributions[self.front_wing][1]
+        contributions["power_unit"] += front_wing_contributions[self.front_wing][2]
+        contributions["reliability"] += front_wing_contributions[self.front_wing][3]
+        contributions["avg_pit_stop_time"] += front_wing_contributions[self.front_wing][4]
 
         rear_wing_contributions = {
             "Typhoon": (50, 27, 26, 23, 0.53),
@@ -91,11 +91,11 @@ class CarSetup:
             "Phantom-X": (26, 15, 12, 11, 0.76),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += rear_wing_contributions[self.rear_wing][0]
-        contributions["Cornering"] += rear_wing_contributions[self.rear_wing][1]
-        contributions["Power Unit"] += rear_wing_contributions[self.rear_wing][2]
-        contributions["Reliability"] += rear_wing_contributions[self.rear_wing][3]
-        contributions["Average Pit Stop Time"] += rear_wing_contributions[self.rear_wing][4]
+        contributions["speed"] += rear_wing_contributions[self.rear_wing][0]
+        contributions["cornering"] += rear_wing_contributions[self.rear_wing][1]
+        contributions["power_unit"] += rear_wing_contributions[self.rear_wing][2]
+        contributions["reliability"] += rear_wing_contributions[self.rear_wing][3]
+        contributions["avg_pit_stop_time"] += rear_wing_contributions[self.rear_wing][4]
 
         gearbox_contributions = {
             "Voyage": (23, 28, 22, 27, 0),
@@ -107,11 +107,11 @@ class CarSetup:
             "Switch-R-OO": (12, 13, 11, 14, 0.47),
             "Starter": (1, 1, 1, 1, 1)
         }
-        contributions["Speed"] += gearbox_contributions[self.gearbox][0]
-        contributions["Cornering"] += gearbox_contributions[self.gearbox][1]
-        contributions["Power Unit"] += gearbox_contributions[self.gearbox][2]
-        contributions["Reliability"] += gearbox_contributions[self.gearbox][3]
-        contributions["Average Pit Stop Time"] += gearbox_contributions[self.gearbox][4]
+        contributions["speed"] += gearbox_contributions[self.gearbox][0]
+        contributions["cornering"] += gearbox_contributions[self.gearbox][1]
+        contributions["power_unit"] += gearbox_contributions[self.gearbox][2]
+        contributions["reliability"] += gearbox_contributions[self.gearbox][3]
+        contributions["avg_pit_stop_time"] += gearbox_contributions[self.gearbox][4]
 
         return contributions
 
