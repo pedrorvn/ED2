@@ -33,7 +33,7 @@ Este projeto permite explorar todas as possibilidades de setup de carros e visua
 ![Histograma com cutoff de 700](https://github.com/pedrorvn/ED2/blob/65d4972c6b1f96b30a14bd0a7f17eb8d7388627d/images/Histograma_ComCutoff.png)
 
 
-# Análise de Configurações de Setups no Jogo F1 Clash
+# Análise de Configurações de Setups no Jogo F1 Clash (Task2)
 
 Nesta tarefa, utilizamos a biblioteca NetworkX e a biblioteca Seaborn para analisar e visualizar as configurações de setups de carros no jogo F1 Clash. Nosso objetivo é entender a relação entre as configurações de setups e seus componentes, com foco no "Team Score" e no "Out Degree."
 
