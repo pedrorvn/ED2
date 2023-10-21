@@ -5,6 +5,12 @@
 2. Implementar o conhecimento da semana 5 no contexto apresentado do jogo F1 Clash.
 3. Utilizar como referência os elementos citados nos slides: componentes do veículo (cards), pontuação dos pilotos, e garrafinhas (boost).
 
+## Vídeo Explicativo 
+
+- [Clique aqui para abrir o vídeo](https://drive.google.com/file/d/1GSrzdezdex4yOxh4UB9MsIRMhFxuxymt/view?usp=share_link)
+
+
+
 # Projeto de Geração de Possibilidades de Setup de Carros (Task 1)
 
 Esta tarefa visa criar todas as possíveis configurações de setup de carros para um jogo de corrida e gerar um histograma representando a distribuição do "Team Score" para essas configurações.
@@ -106,3 +112,9 @@ Nesta tarefa, um grafo bipartido é criado para representar as garrafinhas do jo
 8. **Visualização do Grafo:**
 
    - O grafo `G3` é desenhado com nós e arestas. Os nós do grupo das "Garrafinhas" são representados com a cor 'skyblue,' e o tamanho dos nós é proporcional ao número de arestas que eles têm com as propriedades (representado pelo atributo "weight" nas arestas).
+
+
+# Desenvolvedores
+
+- [Jordan Marques de Almeida Ramos](https://github.com/jordanmaramos)
+- [Pedro Rêgo Vilar Neto](https://github.com/pedrorvn)
