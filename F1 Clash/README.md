@@ -1,7 +1,7 @@
 # F1 CLASH
 
 ## Objetivos
-1. Aplicar o conhecimento adquirido sobre grafos/redes na disciplina, conforme detalhado [aqui](https://github.com/ivanovitchm/datastructure.).
+1. Aplicar o conhecimento adquirido sobre grafos/redes na disciplina, conforme detalhado [aqui](https://github.com/ivanovitchm/datastructure).
 2. Implementar o conhecimento da semana 5 no contexto apresentado do jogo F1 Clash.
 3. Utilizar como referência os elementos citados nos slides: componentes do veículo (cards), pontuação dos pilotos, e garrafinhas (boost).
 

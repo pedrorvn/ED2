@@ -5,11 +5,15 @@ import seaborn as sns
 from Setup.bottles import bottles
 from nxviz import CircosPlot
 from Setup.drivers import drivers
+import itertools
 
 """ ###################### TAREFA 1 ######################"""
 
 # Lista para armazenar todos os setups possíveis
 all_setups = []
+
+# Lista para armazenar os melhores setups possíveis
+best_setups = []
 
 # Lista para armazenar os valores do Team Score
 team_scores = []
@@ -45,6 +49,7 @@ for brakes in CarSetup.brakes_options:
                         # Armazenar o Team Score
                         if team_score >= cutoff:
                             team_scores.append(team_score)
+                            best_setups.append(setup_data)
 
 # Plotar o histograma
 plt.figure(figsize=(8, 6))  # Ajuste o tamanho da figura para o histograma
@@ -158,12 +163,6 @@ plt.title("Grafo Bipartido das Garrafinhas e Propriedades")
 plt.show()
 
 
-
-
-
-
-
-
-
 """ ###################### TAREFA 4 ######################"""
 
+#Vamos ficar devendo essa tarefa, pois não conseguimos fazer a tempo.
