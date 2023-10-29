@@ -28,7 +28,7 @@ A assortatividade de grau é uma medida que avalia como os nós de alta grau (mu
 
 - [Requisito_02](./requisito_02): Nesta pasta há uma analisa da assortatividade em relação aos nós da rede, com um gráfico bipartido e uma análise detalhada de cada rede.
 - [Requisito_03](./requisito_03): Aqui, você encontrará uma tabela com informações sobre o número de nós, o número de arestas, o coeficiente de assortatividade de grau, o número de componentes conectados, o maior componente conectado (GCC), e o coeficiente de agrupamento médio para cada rede de grafos.
-- [Vídeo Explicativo](#): [Link para o vídeo explicativo] - (Espaço reservado para o link do vídeo explicativo).
+- [Vídeo Explicativo](https://drive.google.com/file/d/1n6ejW0tIu_A97apVRl-VGpmnsMRYX7vP/view?usp=sharing): Vídeo contendo explicação do projeto e análise dos resultados obtidos.
 
 ## Referências
 - [SNAP Datasets](http://snap.stanford.edu/data): Jure Leskovec and Andrej Krevl, Stanford Large Network Dataset Collection, jun, 2014.
