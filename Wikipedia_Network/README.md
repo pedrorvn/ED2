@@ -4,6 +4,12 @@ Este projeto consiste na geração de uma rede dirigida baseada nos links das p�
 
 O objetivo final é analisar e visualizar a rede resultante formada pelos links da Wikipédia, explorando as interconexões entre os tópicos abordados em cada uma dessas páginas iniciais, proporcionando uma compreensão mais ampla da estrutura de informações e inter-relações dentro do contexto definido pelas quatro SEEDs.
 
+## Vídeo explicativo
+
+O vídeo contendo uma breve explicação sobre o projeto desenvolvido pode ser visualizado aqui:
+- [LINK DO VÍDEO](https://www.loom.com/share/142ac42f336a49e0908e3cd5677bbe42?sid=4dd18b2d-0581-4d6c-a5da-80eaa923e1d7)
+
+
 ## Requisitos
 
 ### Requisito 1
@@ -15,6 +21,7 @@ A escolha estratégica dessas quatro SEEDs foi feita considerando a diversidade 
 Após unir cada rede em uma só, para tornar a rede mais fácil de manipular, foram removidos os nós duplicados (consideramos duplicados nós que possuem um hífen ou não e nós que estão no plural e no singular). Após isso, notamos que havia muitos nós com um grau baixo, ou seja, uma rede massiva com muitos nós com pouca relevância, para resolver isso, foram filtrados os nós com grau acima de três.
 
 ![Imagem de nós com os graus](images/comparacao_graus.png)
+
 *Número alto de graus com pouca relevância na rede.*
 
 #### Nós e Arestas
