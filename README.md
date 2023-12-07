@@ -8,6 +8,7 @@ This repository contains study files and assignments from the discipline Algorit
 - [Consulta em arquivos CSV](FastQuery_CSV)
 - [F1 CLASH](https://github.com/pedrorvn/ED2/tree/main/F1%20Clash)
 - [Small Worlds](https://github.com/pedrorvn/ED2/tree/ba4a9e8c046d3545fd2b32840ae97067b50fd1b0/Small%20Words)
+- [Wikipedia Network](Wikipedia_Network)
 
 ## Responsável pelo repositório
 Pedro Rêgo Vilar Neto
